@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+
+  <category label="Regle 1 - SPOT">
+    <setting id="rule1_enabled"          type="bool"   label="Activer cette regle"          default="true"/>
+    <setting id="rule1_start_delay_sec"  type="number" label="Delai avant extinction (sec)" default="0" subsetting="true"/>
+    <setting id="rule1_pause_enabled"    type="bool"   label="Allumer en pause"             default="false" subsetting="true"/>
+    <setting id="rule1_pause_brightness" type="slider" label="Luminosite en pause (%)"
+             default="50" range="5,5,100" option="int" subsetting="true"/>
+    <setting id="rule1_end_enabled"      type="bool"   label="Allumer avant la fin"         default="false" subsetting="true"/>
+    <setting id="rule1_end_before_min"   type="number" label="Minutes avant la fin"         default="5" subsetting="true"/>
+  </category>
+
+  <category label="Regle 2 - LED">
+    <setting id="rule2_enabled"          type="bool"   label="Activer cette regle"          default="true"/>
+    <setting id="rule2_start_delay_sec"  type="number" label="Delai avant extinction (sec)" default="0" subsetting="true"/>
+    <setting id="rule2_pause_enabled"    type="bool"   label="Allumer en pause"             default="true" subsetting="true"/>
+    <setting id="rule2_pause_brightness" type="slider" label="Luminosite en pause (%)"
+             default="50" range="5,5,100" option="int" subsetting="true"/>
+    <setting id="rule2_end_enabled"      type="bool"   label="Allumer avant la fin"         default="true" subsetting="true"/>
+    <setting id="rule2_end_before_min"   type="number" label="Minutes avant la fin"         default="5" subsetting="true"/>
+  </category>
+
+  <category label="Options generales">
+    <setting id="confirm_action"     type="bool" label="Demander confirmation avant action" default="false"/>
+    <setting id="show_notifications" type="bool" label="Afficher les notifications"         default="true"/>
+  </category>
+
+</settings>
